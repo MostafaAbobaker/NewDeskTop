@@ -436,6 +436,9 @@ aside.aside-bar ul.list-unstyled.end li.list-item a:hover {
   vertical-align: middle;
   padding: 5px;
 }
+.doctor-desktop-container .card-box .card-box-body table.table tr td .avetar svg {
+  width: 40px;
+}
 .doctor-desktop-container .card-box .card-box-body table.table tr td .text-name, .doctor-desktop-container .card-box .card-box-body table.table tr td .text-info {
   text-align: left;
 }
