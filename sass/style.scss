@@ -1,5 +1,6 @@
 body {
   font-size: 13px;
+  background-color: #EDF5F6;
 }
 .color-red {
   color: #FE5578;
@@ -16,6 +17,7 @@ body {
 #calendar {
   max-width: 1100px;
   width: 100%;
+  height: auto;
   margin: 0 auto;
 }
 /* Start Nav Bar */
@@ -81,7 +83,9 @@ aside.aside-bar {
       }
       &.active {
         a {
-          background: linear-gradient(to bottom, rgba(104,124,220,1) 0%, rgba(26,31,55,1) 100%);
+          //background: linear-gradient(to bottom, rgba(104,124,220,1) 0%, rgba(26,31,55,1) 100%);
+          //background: linear-gradient(to bottom, rgba(#15a4fa,1) 0%, rgba(#026ae3,1) 100%);
+          background-color: #FC6042;
           padding-bottom: 10px;
           span {
             visibility: visible;
@@ -267,6 +271,7 @@ aside.aside-bar {
         text-align: left;
         display: flex;
         justify-content: space-between;
+        background: linear-gradient(to right, rgba(#15a4fa,1) 0%, rgba(#026ae3,1) 100%);
         .text {
           display: inline-block;
           padding: 10px 0;
@@ -344,6 +349,7 @@ aside.aside-bar {
         }
         .btn {
           background: linear-gradient(to bottom, rgba(104,124,220,1) 0%, rgba(26,31,55,1) 100%);
+          background: linear-gradient(to bottom, #8BC34A 0%, #4CAF50 100%);
           border-radius: 5px;
           overflow: hidden;
         }
@@ -351,6 +357,7 @@ aside.aside-bar {
       &.big-tag  {
         justify-content: space-around;
         display: flex;
+        background: linear-gradient(to right, rgba(#15a4fa,1) 0%, rgba(#026ae3,1) 100%);
         .float-right {
           font-size: 0.8em;
         }
@@ -368,47 +375,24 @@ aside.aside-bar {
         padding: 5px;
         margin-bottom: 5px;
       }
-      .panel-group {
-        margin-bottom: 0;
-        .panel-default {
-          .panel-heading {
-            margin: 0;
-            padding: 0;
-            h4.panel-title {
-              margin: 0;
-              padding: 0;
-              a {
-                display: block;
-                color: #fff;
-                padding: 10px 15px;
-                text-decoration: none;
-                background-color: #085370;
-                position: relative;
-                &::after {
-                  position: absolute;
-                  right: 10px;
-                  top: 10px;
-                  content: '\f13a';
-                  font: normal normal normal 16px/1 FontAwesome;
-                }
-                &.collapsed {
-                  background-color: #12B88C;
-                  &::after {
-                    
-                    content: '\f139  ';
-                  }
-                }
-              }
-            }
-            
+      .card-groub  {
+        //border: 1px solid #333;
+        margin-bottom: 5px;
+        .card {
+          &:last-child {
+            border-bottom: 1px solid rgba(4,189,228,1);
           }
-          .panel-body {
-            padding: 0;
-            table {
-              th, td {
-                padding: 5px;
-              }
-            }
+          .card-title {
+            background-color: #1dd1a1;
+            background-image: radial-gradient( circle farthest-corner at 22.4% 21.7%,  rgba(4,189,228,1) 0%, rgba(2,83,185,1) 100.2% );
+            color: #fff;
+            padding: 7px;
+            margin: 0;
+          }
+          .body-card {
+            border-right: 1px solid rgba(4,189,228,1);
+            border-left: 1px solid rgba(4,189,228,1);
+            padding: 5px 10px;
           }
         }
       }
@@ -502,7 +486,9 @@ aside.aside-bar {
               border: none;
             }
             &.active {
-              background: linear-gradient(to bottom, rgba(104,124,220,1) 0%, rgba(26,31,55,1) 100%);
+              //background: linear-gradient(to bottom, rgba(#15a4fa,1) 0%, rgba(#026ae3,1) 100%);
+              background-color:  #FC6042;
+              //background-color: rgba(104, 124, 220, 0.5);
               //background-color:#009BD6;
               h4, h3 {
                 color: #fff;
@@ -511,14 +497,31 @@ aside.aside-bar {
           }
         }
         &.big {
+          thead {
+            tr {
+              color: #fff;
+              background-color: #00bcd4!important;
+              svg {
+                fill: #fff;
+              }
+            }
+          }
           tr {
             transition: all 0.4s ease-in-out;
             td {
               border: 1px solid #ddd;
+              .col-lg-2 {
+                padding: 10px;
+              }
             }
+            
             &:hover {
               cursor: pointer;
-              background-color:rgba(104,124,220,.5);
+              //background-color:rgba(104,124,220,.5);
+              background-color: rgba( #00bcd4,0.05);
+            }
+            &.actives {
+              background-color: rgba( #00bcd4,0.2);
             }
           }
         }
