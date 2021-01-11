@@ -55,7 +55,7 @@ aside.aside-bar {
   z-index: 1;
   flex-direction: column;
   justify-content: space-between;
-  background: linear-gradient(to top, #085370 0%, #12b88c 100%);
+  background-color: #095571;
 }
 aside.aside-bar ul.list-unstyled li.list-item a {
   text-decoration: none;
@@ -87,7 +87,7 @@ aside.aside-bar ul.list-unstyled li.list-item a:hover span {
   transform: translateY(0);
 }
 aside.aside-bar ul.list-unstyled li.list-item.active a {
-  background-color: #FC6042;
+  background-color: #12B88C;
   padding-bottom: 10px;
 }
 aside.aside-bar ul.list-unstyled li.list-item.active a span {
@@ -258,7 +258,6 @@ aside.aside-bar ul.list-unstyled.end li.list-item a:hover {
 .doctor-desktop-container .card-box .card-box-title {
   padding: 10px;
   font-weight: bold;
-  letter-spacing: 1px;
   color: #fff;
   margin-bottom: 0;
   text-align: center;
@@ -269,7 +268,7 @@ aside.aside-bar ul.list-unstyled.end li.list-item a:hover {
   text-align: left;
   display: flex;
   justify-content: space-between;
-  background: linear-gradient(to right, #15a4fa 0%, #026ae3 100%);
+  background: #12B88C;
 }
 .doctor-desktop-container .card-box .card-box-title.big .text {
   display: inline-block;
@@ -345,15 +344,16 @@ aside.aside-bar ul.list-unstyled.end li.list-item a:hover {
   color: #fff;
 }
 .doctor-desktop-container .card-box .card-box-title.big .btn {
-  background: linear-gradient(to bottom, #687cdc 0%, #1a1f37 100%);
-  background: linear-gradient(to bottom, #8BC34A 0%, #4CAF50 100%);
+  background-color: #fff;
+  border: none;
+  color: #12B88C;
   border-radius: 5px;
   overflow: hidden;
 }
 .doctor-desktop-container .card-box .card-box-title.big-tag {
   justify-content: space-around;
   display: flex;
-  background: linear-gradient(to right, #15a4fa 0%, #026ae3 100%);
+  background: #12B88C;
 }
 .doctor-desktop-container .card-box .card-box-title.big-tag .float-right {
   font-size: 0.8em;
@@ -372,21 +372,24 @@ aside.aside-bar ul.list-unstyled.end li.list-item a:hover {
   margin-bottom: 5px;
 }
 .doctor-desktop-container .card-box .card-box-body .card-groub {
-  margin-bottom: 5px;
+  margin: 5px;
 }
-.doctor-desktop-container .card-box .card-box-body .card-groub .card:last-child {
-  border-bottom: 1px solid #04bde4;
+.doctor-desktop-container .card-box .card-box-body .card-groub .card {
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #085370;
 }
 .doctor-desktop-container .card-box .card-box-body .card-groub .card .card-title {
-  background-color: #1dd1a1;
-  background-image: radial-gradient(circle farthest-corner at 22.4% 21.7%, #04bde4 0%, #0253b9 100.2%);
+  background-color: #085370;
   color: #fff;
   padding: 7px;
   margin: 0;
 }
 .doctor-desktop-container .card-box .card-box-body .card-groub .card .body-card {
-  border-right: 1px solid #04bde4;
-  border-left: 1px solid #04bde4;
+  border-right: 1px solid #085370;
+  border-left: 1px solid #085370;
   padding: 5px 10px;
 }
 .doctor-desktop-container .card-box .card-box-body .button-group {
@@ -467,7 +470,7 @@ aside.aside-bar ul.list-unstyled.end li.list-item a:hover {
   border: none;
 }
 .doctor-desktop-container .card-box .card-box-body table.table tr td.active {
-  background-color: #FC6042;
+  background-color: #12B88C;
 }
 .doctor-desktop-container .card-box .card-box-body table.table tr td.active h4, .doctor-desktop-container .card-box .card-box-body table.table tr td.active h3 {
   color: #fff;
@@ -494,6 +497,11 @@ aside.aside-bar ul.list-unstyled.end li.list-item a:hover {
 }
 .doctor-desktop-container .card-box .card-box-body table.table.big tr.actives {
   background-color: rgba(0, 188, 212, 0.2);
+  background-color: #095571;
+  color: #fff;
+}
+.doctor-desktop-container .card-box .card-box-body table.table.big tr.actives .text-info {
+  color: #fff;
 }
 
 /* End Doctor Desktop Container */

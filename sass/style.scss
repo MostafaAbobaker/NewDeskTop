@@ -46,7 +46,8 @@ aside.aside-bar {
   z-index: 1;
   flex-direction: column;
   justify-content: space-between;
-  background: linear-gradient(to top, rgba(8,83,112,1) 0%, rgba(18,184,140,1) 100%);
+  //background: linear-gradient(to top, rgba(8,83,112,1) 0%, rgba(18,184,140,1) 100%);
+  background-color: #095571;
   ul.list-unstyled {
     li.list-item {
       a {
@@ -85,7 +86,7 @@ aside.aside-bar {
         a {
           //background: linear-gradient(to bottom, rgba(104,124,220,1) 0%, rgba(26,31,55,1) 100%);
           //background: linear-gradient(to bottom, rgba(#15a4fa,1) 0%, rgba(#026ae3,1) 100%);
-          background-color: #FC6042;
+          background-color:#12B88C;
           padding-bottom: 10px;
           span {
             visibility: visible;
@@ -261,7 +262,7 @@ aside.aside-bar {
     .card-box-title {
       padding: 10px;
       font-weight: bold;
-      letter-spacing: 1px;
+      //letter-spacing: 1px;
       color: #fff;
       margin-bottom: 0;
       text-align: center;
@@ -271,7 +272,8 @@ aside.aside-bar {
         text-align: left;
         display: flex;
         justify-content: space-between;
-        background: linear-gradient(to right, rgba(#15a4fa,1) 0%, rgba(#026ae3,1) 100%);
+        //background: linear-gradient(to right, rgba(#15a4fa,1) 0%, rgba(#026ae3,1) 100%);
+        background: #12B88C;
         .text {
           display: inline-block;
           padding: 10px 0;
@@ -348,8 +350,11 @@ aside.aside-bar {
           color: #fff;
         }
         .btn {
-          background: linear-gradient(to bottom, rgba(104,124,220,1) 0%, rgba(26,31,55,1) 100%);
-          background: linear-gradient(to bottom, #8BC34A 0%, #4CAF50 100%);
+          //background: linear-gradient(to bottom, rgba(104,124,220,1) 0%, rgba(26,31,55,1) 100%);
+          //background: linear-gradient(to bottom, #8BC34A 0%, #4CAF50 100%);
+          background-color: #fff;
+          border: none;
+          color: #12B88C;
           border-radius: 5px;
           overflow: hidden;
         }
@@ -357,7 +362,8 @@ aside.aside-bar {
       &.big-tag  {
         justify-content: space-around;
         display: flex;
-        background: linear-gradient(to right, rgba(#15a4fa,1) 0%, rgba(#026ae3,1) 100%);
+        //background: linear-gradient(to right, rgba(#15a4fa,1) 0%, rgba(#026ae3,1) 100%);
+        background: #12B88C;
         .float-right {
           font-size: 0.8em;
         }
@@ -377,21 +383,24 @@ aside.aside-bar {
       }
       .card-groub  {
         //border: 1px solid #333;
-        margin-bottom: 5px;
+        margin: 5px;
         .card {
-          &:last-child {
-            border-bottom: 1px solid rgba(4,189,228,1);
-          }
+          border-radius: 5px;
+          box-shadow: 0 0 10px rgba(0,0,0,0.2);
+          overflow: hidden;
+          margin-bottom: 10px;
+          border-bottom: 1px solid #085370;
+          
           .card-title {
-            background-color: #1dd1a1;
-            background-image: radial-gradient( circle farthest-corner at 22.4% 21.7%,  rgba(4,189,228,1) 0%, rgba(2,83,185,1) 100.2% );
+            background-color:#085370;
+            //background-image: radial-gradient( circle farthest-corner at 22.4% 21.7%,  rgba(4,189,228,1) 0%, rgba(2,83,185,1) 100.2% );
             color: #fff;
             padding: 7px;
             margin: 0;
           }
           .body-card {
-            border-right: 1px solid rgba(4,189,228,1);
-            border-left: 1px solid rgba(4,189,228,1);
+            border-right: 1px solid #085370;
+            border-left: 1px solid #085370;
             padding: 5px 10px;
           }
         }
@@ -487,7 +496,7 @@ aside.aside-bar {
             }
             &.active {
               //background: linear-gradient(to bottom, rgba(#15a4fa,1) 0%, rgba(#026ae3,1) 100%);
-              background-color:  #FC6042;
+              background-color: #12B88C;
               //background-color: rgba(104, 124, 220, 0.5);
               //background-color:#009BD6;
               h4, h3 {
@@ -522,6 +531,11 @@ aside.aside-bar {
             }
             &.actives {
               background-color: rgba( #00bcd4,0.2);
+              background-color: #095571;
+              color: #fff;
+              .text-info {
+                color: #fff;
+              }
             }
           }
         }

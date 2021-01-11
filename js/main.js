@@ -75,7 +75,7 @@ $(function () {
                 day: 'MMMM yyyy'                  // Tuesday, Sep 8, 2009
             },
 			allDaySlot: true,
-			selectHelper: true,
+			selectHelper: true,F
 			select: function(start, end, allDay) {
 				var title = prompt('Event Title:');
 				if (title) {
