@@ -8,7 +8,145 @@ html(lang="en")
     link(rel="stylesheet", href="css/bootstrap.min.css")
     link(rel="stylesheet", href="css/style.css")
   body
-
+    nav.image-nav
+      img(src="Images/navbar.png", alt="")
+    aside.aside-overveiw
+      h4 JUMP TO
+      select.form-control
+        option ORDERS
+        option 2
+        option 3
+        option 4
+        option 5
+      h4 CDS
+      ul.list-unstyled
+        li.list-item
+          a(href="") CAREPATHWAY
+        li.list-item
+          a(href="") ICD10 CPGs
+        li.list-item
+          a(href="") RESULT MATRIX
+        li.list-item
+          a(href="") DRUG ALERTS
+        li.list-item
+          a(href="") BODY FIGURE
+        li.list-item
+          a(href="") SCORING
+      h4 OTHERS
+      ul.list-unstyled
+        li.list-item
+          a(href="") ADMISSION
+        li.list-item
+          a(href="") ADVERSE EVENTS
+        li.list-item
+          a(href="") ATTACHEMENTS
+        li.list-item
+          a(href="") SICK LEAVE
+        li.list-item
+          a(href="") RESTRAIN
+        li.list-item
+          a(href="") DISCHARGE
+    .contint-overveiw
+      .container-fluid
+        .row
+          .col-lg-12
+            .Patient-overview
+              .image
+                img.user(src="../Images/doctor.png", alt="")
+              ul.list-unstyled
+                li.list-item 29531
+                li.list-item Ahmed Sayed Abdelaal
+                li.list-item 29 Y/5 M/12 D
+                li.list-item 29005262500137
+              ul.list-unstyled
+                li.list-item Egyptian
+                li.list-item Male
+                li.list-item Notes:
+                li.list-item Love Football
+              ul.list-unstyled
+                li.list-item Weight: 70 Kg
+                li.list-item Height: 170 CM
+                li.list-item BSA: 1.7 m2 
+                li.list-item BMI: 2.4 Kg/m2
+              ul.list-unstyled
+                li.list-item Visit No. 3
+                li.list-item Visit Date: 12/7/2020
+                li.list-item Physician: Dr. Ahmed Mohamed
+                li.list-item Specialty: Internal Medicine
+              ul.list-unstyled
+                li.list-item Internal Medicine Clinic 1
+                li.list-item Cash - Cash - Cash
+                li.list-item Hospital Case
+              .image
+                img.blood(src="../Images/Blood-type.png", alt="")
+                .text-center AB+
+              p No Registered Allergy
+          .col-lg-12
+            .filter-overview
+              button.btn.btn-default Visits 
+                i.fa.fa-filter 
+              table
+                tr
+                  td
+                    p Current Visit
+                    p 17/07/2020
+                  td
+                    .text-center OP
+              table
+                tr
+                  td
+                    p Current Visit.2
+                    p 17/07/2020
+                  td
+                    .text-center OP
+              table
+                tr
+                  td
+                    p Current Visit.1
+                    p 17/07/2020
+                  td
+                    .text-center OP
+              .box-card
+                button.btn.btn-default Diabetes 1
+                button.btn.btn-default Aspirin
+          .col-lg-12
+            .trending
+              button.btn.btn-default Visits
+                i.fa.fa-plus-circle
+              table.table
+                tr
+                  td
+                    img(src="../Images/statistics.png", alt="")
+                  td Blood Pressure
+                  td Temperature
+                  td Pulse
+                  td O2 Saturation
+                  td Respiratory Rate
+                  td Blood Glucose
+                  td Pain Score
+                tr
+                  td TodaY
+                  td 
+                    h4 120/80 mmhg
+                      i.fa.fa-arrow-down
+                  td 
+                    h4 38 C
+                      i.fa.fa-arrow-up
+                  td 
+                    h4 60 bpm
+                      i.fa.fa-arrow-down
+                  td 
+                    h4 99 %
+                      i.fa.fa-arrow-up
+                  td 
+                    h4 Not Taken
+                  td 
+                    h4 1.2 mmol/l
+                      i.fa.fa-arrow-down
+                  td 
+                    h4 7
+                      i.fa.fa-arrow-up
+                  
     script(src="js/jquery-3.4.1.min.js")
     script(src="js/bootstrap.min.js")
     script(src="js/main.js")

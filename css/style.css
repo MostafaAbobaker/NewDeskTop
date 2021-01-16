@@ -107,7 +107,7 @@ aside.aside-bar ul.list-unstyled.end li.list-item a {
   border-radius: 50%;
   padding-bottom: 10px;
   border: none;
-  background: linear-gradient(to bottom, #687cdc 0%, #1a1f37 100%);
+  background-color: #12B88C;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 aside.aside-bar ul.list-unstyled.end li.list-item a.doctor-icon {
@@ -350,8 +350,12 @@ aside.aside-bar ul.list-unstyled.end li.list-item a:hover {
   border-radius: 5px;
   overflow: hidden;
 }
+.doctor-desktop-container .card-box .card-box-title.big ~ .card-box-body {
+  height: 470px;
+  overflow-y: auto;
+}
 .doctor-desktop-container .card-box .card-box-title.big-tag {
-  justify-content: space-around;
+  justify-content: space-between;
   display: flex;
   background: #12B88C;
 }
@@ -398,7 +402,8 @@ aside.aside-bar ul.list-unstyled.end li.list-item a:hover {
   padding: 10px;
 }
 .doctor-desktop-container .card-box .card-box-body .button-group .button-left .btn-primary {
-  background: linear-gradient(to bottom, #687cdc 0%, #1a1f37 100%);
+  background-color: #12B88C;
+  border: none;
   border-radius: 5px;
 }
 .doctor-desktop-container .card-box .card-box-body .button-group .button-left .btn-danger {
@@ -475,9 +480,12 @@ aside.aside-bar ul.list-unstyled.end li.list-item a:hover {
 .doctor-desktop-container .card-box .card-box-body table.table tr td.active h4, .doctor-desktop-container .card-box .card-box-body table.table tr td.active h3 {
   color: #fff;
 }
-.doctor-desktop-container .card-box .card-box-body table.table.big thead tr {
+.doctor-desktop-container .card-box .card-box-body table.table.big thead tr th {
   color: #fff;
   background-color: #00bcd4 !important;
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 .doctor-desktop-container .card-box .card-box-body table.table.big thead tr svg {
   fill: #fff;
@@ -505,5 +513,136 @@ aside.aside-bar ul.list-unstyled.end li.list-item a:hover {
 }
 
 /* End Doctor Desktop Container */
+aside.aside-overveiw {
+  width: 150px;
+  height: calc(100vh - 47.5px);
+  position: fixed;
+  left: 0;
+  top: 47.3px;
+  z-index: 1;
+  background-color: #FCFCFC;
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.1);
+}
+aside.aside-overveiw h4 {
+  background-color: #329190;
+  color: #fff;
+  padding: 5px;
+  padding-left: 10px;
+}
+aside.aside-overveiw h4 ~ select.form-control {
+  margin: 0 5px;
+  width: 90%;
+}
+aside.aside-overveiw h4 ~ ul {
+  margin-left: 15px;
+}
+aside.aside-overveiw h4 ~ ul li a {
+  color: #329190;
+  display: block;
+  margin-bottom: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Start Continer Over Veiw */
+.contint-overveiw {
+  padding-left: 150px;
+  padding-top: 47.3px;
+}
+
+.Patient-overview {
+  background-color: #329190;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.Patient-overview .image {
+  color: #fff;
+  font-weight: bold;
+}
+.Patient-overview .image img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.Patient-overview .image .blood {
+  background-color: transparent;
+  width: 50px;
+  height: auto;
+  margin-top: 10px;
+}
+.Patient-overview ul {
+  border-right: 2px solid #fff;
+  padding-right: 10px;
+  margin-bottom: 0;
+}
+.Patient-overview ul li {
+  color: #fff;
+  margin-bottom: 2px;
+}
+.Patient-overview p {
+  color: #fff;
+  font-weight: bold;
+  margin-top: 25px;
+}
+
+.filter-overview {
+  padding: 10px 0;
+  display: flex;
+}
+.filter-overview table {
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 0 10px;
+}
+.filter-overview table tr td {
+  color: #fff;
+  padding: 5px;
+}
+.filter-overview table tr td p {
+  margin-bottom: 0;
+}
+.filter-overview table tr td:first-child {
+  background-color: #0FA980;
+}
+.filter-overview table tr td:last-child {
+  background-color: #0A6876;
+}
+.filter-overview table tr td div {
+  writing-mode: vertical-lr;
+  transform: scale(-1);
+  text-align: center;
+  vertical-align: middle;
+}
+.filter-overview .box-card {
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  width: 59%;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.trending {
+  display: flex;
+  padding: 10px 0;
+  background-color: #fff;
+}
+.trending button.btn.btn-default {
+  border-radius: 50%;
+}
+.trending button.btn.btn-default i {
+  display: block;
+}
+.trending table tr td {
+  text-align: center;
+}
+.trending table tr td h4 {
+  margin: 0;
+}
+
+/* End Continer Over Veiw */
 
 /*# sourceMappingURL=style.css.map */
