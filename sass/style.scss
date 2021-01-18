@@ -3,22 +3,35 @@ body {
   background-color: #EDF5F6;
 }
 .color-red {
-  color: #FE5578;
+  color: #FE5578!important;
 }
 .color-green {
-  color: #12B88C;
+  color: #12B88C!important;
 }
 .color-yellow {
-  color: #fdd835;
+  color: #fdd835!important;
+  color: #FFC107!important;
 }
 .font-weight {
-  font-weight: bold;
+  font-weight: bold!important;
 }
 #calendar {
   max-width: 1100px;
   width: 100%;
   height: auto;
   margin: 0 auto;
+}
+.box-model-calender {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 600px;
+  overflow: auto;
+  z-index: 9999;
+  background-color: #fff;
+  display: none;
 }
 /* Start Nav Bar */
 .image-nav {
@@ -431,6 +444,7 @@ aside.aside-bar {
           .btn-primary {
             background: linear-gradient(to right, rgba(18,184,140,1) 0%, rgba(8,83,112,1) 100%);
             border-radius: 5px;
+            margin: 0 5px;
           }
         }
         

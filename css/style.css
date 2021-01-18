@@ -5,19 +5,20 @@ body {
 }
 
 .color-red {
-  color: #FE5578;
+  color: #FE5578 !important;
 }
 
 .color-green {
-  color: #12B88C;
+  color: #12B88C !important;
 }
 
 .color-yellow {
-  color: #fdd835;
+  color: #fdd835 !important;
+  color: #FFC107 !important;
 }
 
 .font-weight {
-  font-weight: bold;
+  font-weight: bold !important;
 }
 
 #calendar {
@@ -25,6 +26,19 @@ body {
   width: 100%;
   height: auto;
   margin: 0 auto;
+}
+
+.box-model-calender {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 600px;
+  overflow: auto;
+  z-index: 9999;
+  background-color: #fff;
+  display: none;
 }
 
 /* Start Nav Bar */
@@ -414,6 +428,7 @@ aside.aside-bar ul.list-unstyled.end li.list-item a:hover {
 .doctor-desktop-container .card-box .card-box-body .button-group .button-right .btn-primary {
   background: linear-gradient(to right, #12b88c 0%, #085370 100%);
   border-radius: 5px;
+  margin: 0 5px;
 }
 .doctor-desktop-container .card-box .card-box-body table.table {
   margin-bottom: 0;
@@ -620,29 +635,120 @@ aside.aside-overveiw h4 ~ ul li a {
 .filter-overview .box-card {
   background-color: #fff;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  width: 59%;
+  width: 58%;
   padding: 5px;
   border-radius: 5px;
 }
 
-.trending {
+.filter-info {
+  display: none;
+}
+.filter-info .row {
+  position: relative;
+  background-color: #fff;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  padding-bottom: 10px;
+}
+.filter-info .form-group .checkbox {
+  margin-bottom: 0;
+}
+.filter-info .form-group .checkbox input[type=text] {
+  width: 30px;
+  display: inline-block;
+  margin: 0 5px;
+}
+.filter-info .form-group-sm {
+  margin: 7px 0;
+  display: flex;
+}
+
+/* End Continer Over Veiw */
+/* Start contint-overveiw-box   */
+.contint-overveiw-box {
+  padding-left: 150px;
+}
+.contint-overveiw-box .trending {
   display: flex;
   padding: 10px 0;
   background-color: #fff;
 }
-.trending button.btn.btn-default {
+.contint-overveiw-box .trending button.btn.btn-default {
   border-radius: 50%;
+  background-color: #0fa980;
+  color: #fff;
+  height: 65px;
+  margin: 0 10px;
 }
-.trending button.btn.btn-default i {
+.contint-overveiw-box .trending button.btn.btn-default i {
   display: block;
 }
-.trending table tr td {
+.contint-overveiw-box .trending table {
+  margin-bottom: 0;
+}
+.contint-overveiw-box .trending table tr td {
   text-align: center;
 }
-.trending table tr td h4 {
+.contint-overveiw-box .trending table tr td h4 {
   margin: 0;
 }
+.contint-overveiw-box .trending table .dark-green {
+  color: #0A6876;
+}
+.contint-overveiw-box .trending table .light-green {
+  color: #15CC40;
+}
+.contint-overveiw-box .card-overview {
+  margin: 10px 0;
+}
+.contint-overveiw-box .card-overview .card-head {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0FA980;
+  border-radius: 10px 10px 0 0;
+}
+.contint-overveiw-box .card-overview .card-head h4 {
+  background-color: #0A6876;
+  color: #fff;
+  padding: 12px;
+  margin: 0;
+  border-radius: 10px 0 0 0;
+}
+.contint-overveiw-box .card-overview .card-head form.form-inline {
+  width: 50%;
+  padding: 5px 0;
+}
+.contint-overveiw-box .card-overview .card-head span.icon {
+  display: flex;
+  width: 15%;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.contint-overveiw-box .card-overview .card-head span.icon span.Puls {
+  color: #fff;
+}
+.contint-overveiw-box .card-overview .card-head span.icon span.favorite {
+  margin: 0 5px;
+  color: #FFC107;
+}
+.contint-overveiw-box .card-overview .card-bod {
+  background-color: #fff;
+}
+.contint-overveiw-box .card-overview .card-bod table.table th {
+  color: #0FA980;
+}
+.contint-overveiw-box .card-overview .card-bod table.table td {
+  color: #0A6876;
+}
+.contint-overveiw-box .card-overview .card-bod table.table td p {
+  margin-bottom: 0;
+}
+.contint-overveiw-box .card-overview .card-bod table.table td small {
+  padding-left: 10px;
+  display: inline-block;
+}
 
-/* End Continer Over Veiw */
+/* End contint-overveiw-box   */
 
 /*# sourceMappingURL=style.css.map */

@@ -81,7 +81,7 @@
           </div>
           <div class="col-lg-12">
             <div class="filter-overview">
-              <button class="btn btn-default">Visits <i class="fa fa-filter"> </i></button>
+              <button class="btn btn-default show-filter">Visits <i class="fa fa-filter"> </i></button>
               <table>
                 <tr>
                   <td>
@@ -111,7 +111,7 @@
                     <p>17/07/2020</p>
                   </td>
                   <td>
-                    <div class="text-center">OP</div>
+                    <div class="text-center">ER</div>
                   </td>
                 </tr>
               </table>
@@ -121,45 +121,999 @@
               </div>
             </div>
           </div>
+          <div class="col-lg-12 filter-info">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-2">
+                  <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"/> Last visit
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"/> Last 2 visits
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"/> Last 3 Visits
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"/> Visits within Month
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"/> Visits within 3 Months
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"/> Visits from
+                          <input type="text"/>Month
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"/> Abnormal Values only
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"/> Keywords
+                          <textarea class="form-control" rows="2"></textarea>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form-group form-group-sm">
+                    <label class="col-sm-3 control-label" for="inputPassword">Visits</label>
+                    <div class="col-sm-9">
+                      <select class="form-control">
+                        <option>All</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group form-group-sm">
+                    <label class="col-sm-3 control-label" for="inputPassword">Location</label>
+                    <div class="col-sm-9">
+                      <select class="form-control">
+                        <option>Internal Medicine Clinic</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group form-group-sm">
+                    <label class="col-sm-3 control-label" for="inputPassword">Sorting</label>
+                    <div class="col-sm-9">
+                      <select class="form-control">
+                        <option>Newest to oldest</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contint-overveiw-box">    
+      <div class="container-fluid">
+        <div class="row">      
           <div class="col-lg-12">
             <div class="trending">
-              <button class="btn btn-default">Visits<i class="fa fa-plus-circle"></i></button>
+              <button class="btn btn-default">Visits<i class="fa fa-plus-circle fa-2x"></i></button>
               <table class="table">
                 <tr>
                   <td><img src="../Images/statistics.png" alt=""/></td>
-                  <td>Blood Pressure</td>
-                  <td>Temperature</td>
-                  <td>Pulse</td>
-                  <td>O2 Saturation</td>
-                  <td>Respiratory Rate</td>
-                  <td>Blood Glucose</td>
-                  <td>Pain Score</td>
+                  <td class="dark-green">Blood Pressure</td>
+                  <td class="dark-green">Temperature</td>
+                  <td class="dark-green">Pulse</td>
+                  <td class="dark-green">O2 Saturation</td>
+                  <td class="dark-green">Respiratory Rate</td>
+                  <td class="dark-green">Blood Glucose</td>
+                  <td class="dark-green">Pain Score</td>
                 </tr>
                 <tr>
-                  <td>TodaY</td>
+                  <td class="dark-green">TodaY</td>
                   <td> 
-                    <h4>120/80 mmhg<i class="fa fa-arrow-down"></i></h4>
+                    <h4 class="light-green">120/80 mmhg<i class="fa fa-arrow-down"></i></h4>
                   </td>
                   <td> 
-                    <h4>38 C<i class="fa fa-arrow-up"></i></h4>
+                    <h4 class="color-red">38 C<i class="fa fa-arrow-up"></i></h4>
                   </td>
                   <td> 
-                    <h4>60 bpm<i class="fa fa-arrow-down"></i></h4>
+                    <h4 class="light-green">60 bpm<i class="fa fa-arrow-down"></i></h4>
                   </td>
                   <td> 
-                    <h4>99 %<i class="fa fa-arrow-up"></i></h4>
+                    <h4 class="light-green">99 %<i class="fa fa-arrow-up"></i></h4>
                   </td>
                   <td> 
-                    <h4>Not Taken</h4>
+                    <h4 class="dark-green">Not Taken</h4>
                   </td>
                   <td> 
-                    <h4>1.2 mmol/l<i class="fa fa-arrow-down"></i></h4>
+                    <h4 class="light-green">1.2 mmol/l<i class="fa fa-arrow-down"></i></h4>
                   </td>
                   <td> 
-                    <h4>7<i class="fa fa-arrow-up"></i></h4>
+                    <h4 class="color-red">7<i class="fa fa-arrow-up"></i></h4>
                   </td>
                 </tr>
               </table>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="card-overview">
+                  <div class="card-head">
+                    <h4>Complaints</h4>
+                    <form class="form-inline">
+                      <div class="form-group">
+                        <div class="input-group">
+                          <input class="form-control" type="text" placeholder="Search complaints"/>
+                          <div class="input-group-addon" href=""><i class="fa fa-search"></i></div>
+                        </div>
+                      </div>
+                    </form><span class="icon"><span class="Puls"><i class="fa fa-plus-circle fa-2x">   </i></span><span class="favorite"><i class="fa fa-star fa-2x">   </i></span></span>
+                  </div>
+                  <div class="card-bod">
+                    <table class="table"> 
+                      <thead>
+                        <tr>
+                          <th>Complaint</th>
+                          <th>Date</th>
+                          <th> </th>
+                        </tr>
+                      </thead>
+                      <tbody> 
+                        <tr> 
+                          <td>Abdominal pain</td>
+                          <td>17/07/2020</td>
+                          <td class="color-yellow">Chief</td>
+                        </tr>
+                        <tr> 
+                          <td>Vomiting</td>
+                          <td>17/07/2020</td>
+                          <td> </td>
+                        </tr>
+                        <tr> 
+                          <td>Headache</td>
+                          <td>12/05/2020</td>
+                          <td class="color-yellow">Chief</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card-overview">
+                  <div class="card-head">
+                    <h4>Findings</h4>
+                    <form class="form-inline">
+                      <div class="form-group">
+                        <div class="input-group">
+                          <input class="form-control" type="text" placeholder="Search complaints"/>
+                          <div class="input-group-addon" href=""><i class="fa fa-search"></i></div>
+                        </div>
+                      </div>
+                    </form><span class="icon"><span class="Puls"><i class="fa fa-plus-circle fa-2x">   </i></span><span class="favorite"><i class="fa fa-star fa-2x">   </i></span></span>
+                  </div>
+                  <div class="card-bod">
+                    <table class="table"> 
+                      <thead>
+                        <tr>
+                          <th>Finding</th>
+                          <th>Date</th>
+                          <th>Physician</th>
+                        </tr>
+                      </thead>
+                      <tbody> 
+                        <tr> 
+                          <td>Palpitation</td>
+                          <td>17/07/2020</td>
+                          <td>Dr.Ahmed Sayed</td>
+                        </tr>
+                        <tr> 
+                          <td>Weak Pluse</td>
+                          <td>17/07/2020</td>
+                          <td>Dr.Ahmed Sayed</td>
+                        </tr>
+                        <tr> 
+                          <td>Murmur</td>
+                          <td>12/05/2020</td>
+                          <td>Dr.Ahmed Sayed</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card-overview">
+                  <div class="card-head">
+                    <h4>Diagnosis</h4>
+                    <form class="form-inline">
+                      <div class="form-group">
+                        <div class="input-group">
+                          <input class="form-control" type="text" placeholder="Search complaints"/>
+                          <div class="input-group-addon" href=""><i class="fa fa-search"></i></div>
+                        </div>
+                      </div>
+                    </form><span class="icon"><span class="Puls"><i class="fa fa-plus-circle fa-2x">   </i></span><span class="favorite"><i class="fa fa-star fa-2x">   </i></span></span>
+                  </div>
+                  <div class="card-bod">
+                    <table class="table"> 
+                      <thead>
+                        <tr>
+                          <th>Diagnosis</th>
+                          <th> </th>
+                          <th> </th>
+                          <th> </th>
+                        </tr>
+                      </thead>
+                      <tbody> 
+                        <tr> 
+                          <td> 
+                            <p>i10. Essential Hypertension</p><small>Dr. Mohamed Mostafa </small>
+                          </td>
+                          <td>17/02/2020</td>
+                          <td class="color-yellow">Final</td>
+                          <td> <i class="fa fa-info-circle fa-lg"></i></td>
+                        </tr>
+                        <tr> 
+                          <td> 
+                            <p>H59. Heart Failure, unspecified </p><small>Dr. Mohamed Mostafa </small>
+                          </td>
+                          <td>17/02/2020</td>
+                          <td class="color-yellow">Initial</td>
+                          <td> <i class="fa fa-info-circle fa-lg"></i></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row"> 
+              <div class="col-lg-4">
+                <div class="card-overview">
+                  <div class="card-head">
+                    <h4>Laboratory</h4>
+                    <form class="form-inline">
+                      <div class="form-group">
+                        <div class="input-group">
+                          <input class="form-control" type="text" placeholder="Search complaints"/>
+                          <div class="input-group-addon" href=""><i class="fa fa-search"></i></div>
+                        </div>
+                      </div>
+                    </form><span class="icon"><span class="Puls"><i class="fa fa-plus-circle fa-2x">   </i></span><span class="favorite"><img src="Images/Group 5.svg" alt=""/></span></span>
+                  </div>
+                  <div class="card-bod">
+                    <table class="table"> 
+                      <thead>
+                        <tr>
+                          <th>Service</th>
+                          <th>Date</th>
+                          <th>Status/Result</th>
+                          <th> </th>
+                        </tr>
+                      </thead>
+                      <tbody> 
+                        <tr> 
+                          <td>INR</td>
+                          <td>17/07</td>
+                          <td>Writing</td>
+                          <td> </td>
+                        </tr>
+                        <tr> 
+                          <td>LDL</td>
+                          <td>17/07/2020</td>
+                          <td>99 mg/dl</td>
+                          <td> <i class="fa fa-window-minimize fa-lg"></i></td>
+                        </tr>
+                        <tr> 
+                          <td>HDL</td>
+                          <td>12/05/2020</td>
+                          <td>40 mg/dl</td>
+                          <td class="color-green"> <i class="fa fa-arrow-down fa-lg"></i></td>
+                        </tr>
+                        <tr> 
+                          <td>Cholesterol</td>
+                          <td>17/07/2020</td>
+                          <td>120 mg/dl</td>
+                          <td class="color-red"> <i class="fa fa-arrow-up fa-lg"></i></td>
+                        </tr>
+                        <tr> 
+                          <td>Triglyceride</td>
+                          <td>12/05/2020</td>
+                          <td>130 mg/dl</td>
+                          <td class="color-green"> <i class="fa fa-arrow-down fa-lg"></i></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card-overview">
+                  <div class="card-head">
+                    <h4>Radiology</h4>
+                    <form class="form-inline">
+                      <div class="form-group">
+                        <div class="input-group">
+                          <input class="form-control" type="text" placeholder="Search complaints"/>
+                          <div class="input-group-addon" href=""><i class="fa fa-search"></i></div>
+                        </div>
+                      </div>
+                    </form><span class="icon"><span class="Puls"><i class="fa fa-plus-circle fa-2x">   </i></span><span class="favorite"><img src="Images/Group 5.svg" alt=""/></span></span>
+                  </div>
+                  <div class="card-bod">
+                    <table class="table"> 
+                      <thead>
+                        <tr>
+                          <th>Service</th>
+                          <th>Date</th>
+                          <th>Status</th>
+                          <th>Report/PACs</th>
+                        </tr>
+                      </thead>
+                      <tbody> 
+                        <tr> 
+                          <td>Chest X-Ray</td>
+                          <td>17/07/2020</td>
+                          <td class="color-green"> Normal</td>
+                          <td> <img src="../Images/report.svg" alt=""/><img src="../Images/x-ray.svg" alt="" style="margin: 0 10px; display: inline-block"/></td>
+                        </tr>
+                        <tr> 
+                          <td>Chest X-Ray</td>
+                          <td>17/07/2020</td>
+                          <td> Writing</td>
+                          <td> <img src="../Images/report.svg" alt=""/><img src="../Images/x-ray.svg" alt="" style="margin: 0 10px; display: inline-block"/></td>
+                        </tr>
+                        <tr> 
+                          <td>Chest X-Ray</td>
+                          <td>17/07/2020</td>
+                          <td class="color-red">  Abnormal</td>
+                          <td> <img src="../Images/report.svg" alt=""/><img src="../Images/x-ray.svg" alt="" style="margin: 0 10px; display: inline-block"/></td>
+                        </tr>
+                        <tr> 
+                          <td>Chest X-Ray</td>
+                          <td>17/07/2020</td>
+                          <td class="color-green"> Normal</td>
+                          <td> <img src="../Images/report.svg" alt=""/><img src="../Images/x-ray.svg" alt="" style="margin: 0 10px; display: inline-block"/></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card-overview">
+                  <div class="card-head">
+                    <h4>Medication</h4>
+                    <form class="form-inline">
+                      <div class="form-group">
+                        <div class="input-group">
+                          <input class="form-control" type="text" placeholder="Search complaints"/>
+                          <div class="input-group-addon" href=""><i class="fa fa-search"></i></div>
+                        </div>
+                      </div>
+                    </form><span class="icon"><span class="Puls"><i class="fa fa-plus-circle fa-2x">   </i></span><span class="favorite"><i class="fa fa-star fa-2x">   </i></span></span>
+                  </div>
+                  <div class="card-bod">
+                    <table class="table"> 
+                      <thead>
+                        <tr>
+                          <th>Medication</th>
+                          <th>Dose</th>
+                          <th> <i class="fa fa-filter"></i></th>
+                        </tr>
+                      </thead>
+                      <tbody> 
+                        <tr> 
+                          <td>Concor 5 mg tab</td>
+                          <td>1 tab/Once daily</td>
+                          <td class="color-green"> <i class="fa fa-circle"></i></td>
+                        </tr>
+                        <tr> 
+                          <td>Plavix 75 mg tab</td>
+                          <td>1 tab/Once Daily</td>
+                          <td class="color-green"> <i class="fa fa-circle"></i></td>
+                        </tr>
+                        <tr> 
+                          <td>Aspirin 81 mg tab</td>
+                          <td>1 tab/After Lunch</td>
+                          <td class="color-green"> <i class="fa fa-circle"></i></td>
+                        </tr>
+                        <tr> 
+                          <td>Augmentin 1g tab</td>
+                          <td>1 tab/Every 12 hrs/7 days</td>
+                          <td class="color-red"> <i class="fa fa-circle"></i></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">           
+              <div class="col-lg-4">
+                <div class="card-overview">
+                  <div class="card-head">
+                    <h4>Operations</h4>
+                    <form class="form-inline">
+                      <div class="form-group">
+                        <div class="input-group">
+                          <input class="form-control" type="text" placeholder="Search complaints"/>
+                          <div class="input-group-addon" href=""><i class="fa fa-search"></i></div>
+                        </div>
+                      </div>
+                    </form><span class="icon"><span class="Puls"><i class="fa fa-plus-circle fa-2x">   </i></span><span class="favorite"></span></span>
+                  </div>
+                  <div class="card-bod">
+                    <table class="table"> 
+                      <thead>
+                        <tr>
+                          <th>Operation</th>
+                          <th>Date</th>
+                          <th>Status/Report</th>
+                        </tr>
+                      </thead>
+                      <tbody> 
+                        <tr> 
+                          <td>ACL</td>
+                          <td>17/07/2020</td>
+                          <td>Scheduled</td>
+                        </tr>
+                        <tr> 
+                          <td>Open Heart</td>
+                          <td>17/07/2020</td>
+                          <td> <img src="../Images/x-ray.svg" alt=""/></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card-overview">
+                  <div class="card-head">
+                    <h4>Catheter</h4>
+                    <form class="form-inline">
+                      <div class="form-group">
+                        <div class="input-group">
+                          <input class="form-control" type="text" placeholder="Search complaints"/>
+                          <div class="input-group-addon" href=""><i class="fa fa-search"></i></div>
+                        </div>
+                      </div>
+                    </form><span class="icon"><span class="Puls"><i class="fa fa-plus-circle fa-2x">   </i></span><span class="favorite"></span></span>
+                  </div>
+                  <div class="card-bod">
+                    <table class="table"> 
+                      <thead>
+                        <tr>
+                          <th>Operation</th>
+                          <th>Date</th>
+                          <th>Status/Report/PACs</th>
+                          <th> </th>
+                        </tr>
+                      </thead>
+                      <tbody> 
+                        <tr> 
+                          <td>ACL</td>
+                          <td>17/07/2020</td>
+                          <td>Scheduled</td>
+                          <td> </td>
+                        </tr>
+                        <tr> 
+                          <td>Open Heart</td>
+                          <td>17/07/2020</td>
+                          <td> <img src="../Images/report.svg" alt=""/></td>
+                          <td> <img src="../Images/x-ray.svg" alt=""/></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card-overview">
+                  <div class="card-head">
+                    <h4>Endoscopy</h4>
+                    <form class="form-inline">
+                      <div class="form-group">
+                        <div class="input-group">
+                          <input class="form-control" type="text" placeholder="Search complaints"/>
+                          <div class="input-group-addon" href=""><i class="fa fa-search"></i></div>
+                        </div>
+                      </div>
+                    </form><span class="icon"><span class="Puls"><i class="fa fa-plus-circle fa-2x">   </i></span><span class="favorite"></span></span>
+                  </div>
+                  <div class="card-bod">
+                    <table class="table"> 
+                      <thead>
+                        <tr>
+                          <th>Operation</th>
+                          <th>Date</th>
+                          <th>Status/Report/PACs</th>
+                          <th> </th>
+                        </tr>
+                      </thead>
+                      <tbody> 
+                        <tr> 
+                          <td>ACL</td>
+                          <td>17/07/2020</td>
+                          <td>Scheduled</td>
+                          <td> </td>
+                        </tr>
+                        <tr> 
+                          <td>Open Heart</td>
+                          <td>17/07/2020</td>
+                          <td> <img src="../Images/report.svg" alt=""/></td>
+                          <td> <img src="../Images/x-ray.svg" alt=""/></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">           
+              <div class="col-lg-4">
+                <div class="card-overview">
+                  <div class="card-head">
+                    <h4>Services</h4>
+                    <form class="form-inline">
+                      <div class="form-group">
+                        <div class="input-group">
+                          <input class="form-control" type="text" placeholder="Search complaints"/>
+                          <div class="input-group-addon" href=""><i class="fa fa-search"></i></div>
+                        </div>
+                      </div>
+                    </form><span class="icon"><span class="Puls"><i class="fa fa-plus-circle fa-2x">   </i></span><span class="favorite"></span></span>
+                  </div>
+                  <div class="card-bod">
+                    <table class="table"> 
+                      <thead>
+                        <tr>
+                          <th>Service</th>
+                          <th>Status</th>
+                          <th>Date</th>
+                        </tr>
+                      </thead>
+                      <tbody> 
+                        <tr> 
+                          <td>Suppository</td>
+                          <td>Checked-Out</td>
+                          <td>17/07/2020
+                            <div class="time">10:00 am</div>
+                          </td>
+                        </tr>
+                        <tr> 
+                          <td>UltraSound</td>
+                          <td>Checked-Out</td>
+                          <td>17/07/2020
+                            <div class="time">10:00 am</div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card-overview">
+                  <div class="card-head">
+                    <h4>Sheets</h4>
+                    <form class="form-inline">
+                      <div class="form-group">
+                        <div class="input-group">
+                          <input class="form-control" type="text" placeholder="Search complaints"/>
+                          <div class="input-group-addon" href=""><i class="fa fa-search"></i></div>
+                        </div>
+                      </div>
+                    </form><span class="icon"><span class="Puls"><i class="fa fa-plus-circle fa-2x">   </i></span><span class="favorite"></span></span>
+                  </div>
+                  <div class="card-bod">
+                    <table class="table"> 
+                      <thead>
+                        <tr>
+                          <th>Name</th>
+                          <th>Sheet</th>
+                          <th>Date</th>
+                        </tr>
+                      </thead>
+                      <tbody> 
+                        <tr> 
+                          <td>Glass Prescription</td>
+                          <td> <img src="../Images/report.png" alt=""/></td>
+                          <td>17/07/2020
+                            <div class="time">10:00 am</div>
+                          </td>
+                        </tr>
+                        <tr> 
+                          <td>Ophthalmology Sheet</td>
+                          <td> <img src="../Images/report.png" alt=""/></td>
+                          <td>17/07/2020
+                            <div class="time">10:00 am</div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card-overview">
+                  <div class="card-head">
+                    <h4 style="font-size: 15px">Medical Report</h4>
+                    <form class="form-inline">
+                      <div class="form-group">
+                        <div class="input-group">
+                          <input class="form-control" type="text" placeholder="Search complaints"/>
+                          <div class="input-group-addon" href=""><i class="fa fa-search"></i></div>
+                        </div>
+                      </div>
+                    </form><span class="icon"><span class="Puls"><i class="fa fa-plus-circle fa-2x">   </i></span><span class="favorite"></span></span>
+                  </div>
+                  <div class="card-bod">
+                    <table class="table"> 
+                      <thead>
+                        <tr>
+                          <th>Medical Report</th>
+                          <th>Date</th>
+                        </tr>
+                      </thead>
+                      <tbody> 
+                        <tr> 
+                          <td>Discharge Summary<img src="../Images/report.png" alt="" style="margin: 0 10px; display: inline-block"/></td>
+                          <td>17/07/2020
+                            <div class="time">10:00 am</div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">           
+              <div class="col-lg-4">
+                <div class="card-overview">
+                  <div class="card-head">
+                    <h4 style="font-size: 15px">Progress Notes</h4>
+                    <form class="form-inline">
+                      <div class="form-group">
+                        <div class="input-group">
+                          <input class="form-control" type="text" placeholder="Search complaints"/>
+                          <div class="input-group-addon" href=""><i class="fa fa-search"></i></div>
+                        </div>
+                      </div>
+                    </form><span class="icon"><span class="Puls"><i class="fa fa-plus-circle fa-2x">   </i></span><span class="favorite"></span></span>
+                  </div>
+                  <div class="card-bod">
+                    <table class="table"> 
+                      <thead>
+                        <tr>
+                          <th>Notes</th>
+                          <th>Date</th>
+                        </tr>
+                      </thead>
+                      <tbody> 
+                        <tr> 
+                          <td>Patient is now better</td>
+                          <td>17/07/2020
+                            <div class="time">10:00 am</div>
+                          </td>
+                        </tr>
+                        <tr> 
+                          <td>To Check Lab results</td>
+                          <td>17/07/2020
+                            <div class="time">10:00 am</div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card-overview">
+                  <div class="card-head">
+                    <h4>Remakrs</h4>
+                    <form class="form-inline">
+                      <div class="form-group">
+                        <div class="input-group">
+                          <input class="form-control" type="text" placeholder="Search complaints"/>
+                          <div class="input-group-addon" href=""><i class="fa fa-search"></i></div>
+                        </div>
+                      </div>
+                    </form><span class="icon"><span class="Puls" style="position: relative;left: -5px;"><img src="Images/Group 61.png" alt=""/></span><span class="Puls"><i class="fa fa-plus-circle fa-2x">   </i></span><span class="favorite"></span></span>
+                  </div>
+                  <div class="card-bod">
+                    <table class="table"> 
+                      <thead>
+                        <tr>
+                          <th>Remarks</th>
+                          <th>Date</th>
+                        </tr>
+                      </thead>
+                      <tbody> 
+                        <tr> 
+                          <td>Dr. Ahmed : To check vital signs every 12 hours</td>
+                          <td>17/07/2020
+                            <div class="time">10:00 am</div>
+                          </td>
+                        </tr>
+                        <tr> 
+                          <td>Nr. Soha: Ok Doctor</td>
+                          <td>17/07/2020
+                            <div class="time">10:00 am</div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card-overview">
+                  <div class="card-head">
+                    <h4 style="font-size: 15px">Consultation</h4>
+                    <form class="form-inline">
+                      <div class="form-group">
+                        <div class="input-group">
+                          <input class="form-control" type="text" placeholder="Search complaints"/>
+                          <div class="input-group-addon" href=""><i class="fa fa-search"></i></div>
+                        </div>
+                      </div>
+                    </form><span class="icon"><span class="Puls"><i class="fa fa-plus-circle fa-2x">   </i></span><span class="favorite"></span></span>
+                  </div>
+                  <div class="card-bod">
+                    <table class="table"> 
+                      <thead>
+                        <tr>
+                          <th>From</th>
+                          <th>To</th>
+                          <th>Details</th>
+                        </tr>
+                      </thead>
+                      <tbody> 
+                        <tr> 
+                          <td>Dr. Ahmed Sayed
+                            <div class="info color-green">Internal Medicine</div>
+                            <div class="time">17/07 10:00 am</div>
+                          </td>
+                          <td>Dr. Mohamed Ahmed
+                            <div class="info color-green">Anesthesia</div>
+                            <div class="time">Not yet</div>
+                          </td>
+                          <td> <img src="../Images/checklist.png " alt=""/></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">           
+              <div class="col-lg-4">
+                <div class="card-overview">
+                  <div class="card-head">
+                    <h4 style="font-size: 15px">Scoring</h4>
+                    <form class="form-inline">
+                      <div class="form-group">
+                        <div class="input-group">
+                          <input class="form-control" type="text" placeholder="Search complaints"/>
+                          <div class="input-group-addon" href=""><i class="fa fa-search"></i></div>
+                        </div>
+                      </div>
+                    </form><span class="icon"><span class="Puls"><i class="fa fa-plus-circle fa-2x">   </i></span><span class="favorite"></span></span>
+                  </div>
+                  <div class="card-bod">
+                    <table class="table"> 
+                      <thead>
+                        <tr>
+                          <th>Score</th>
+                          <th>Result</th>
+                          <th>Conclusion</th>
+                          <th>Date</th>
+                        </tr>
+                      </thead>
+                      <tbody> 
+                        <tr> 
+                          <td>Morse Fall Risk</td>
+                          <td class="color-red">60<i class="fa fa-arrow-up"></i></td>
+                          <td> <i class="fa fa-info-circle fa-lg"></i></td>
+                          <td>17/07/2020
+                            <div class="time">10:00 am</div>
+                          </td>
+                        </tr>
+                        <tr> 
+                          <td>EWBS</td>
+                          <td class="color-green">3<i class="fa fa-arrow-down"></i></td>
+                          <td> <i class="fa fa-info-circle fa-lg"></i></td>
+                          <td>17/07/2020
+                            <div class="time">10:00 am</div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card-overview">
+                  <div class="card-head">
+                    <h4>Dietary</h4>
+                    <form class="form-inline">
+                      <div class="form-group">
+                        <div class="input-group">
+                          <input class="form-control" type="text" placeholder="Search complaints"/>
+                          <div class="input-group-addon" href=""><i class="fa fa-search"></i></div>
+                        </div>
+                      </div>
+                    </form><span class="icon"><span class="Puls"><i class="fa fa-plus-circle fa-2x">   </i></span><span class="favorite"></span></span>
+                  </div>
+                  <div class="card-bod">
+                    <table class="table"> 
+                      <thead>
+                        <tr>
+                          <th>Diet</th>
+                          <th>Date</th>
+                        </tr>
+                      </thead>
+                      <tbody> 
+                        <tr> 
+                          <td>Low Salt Meals</td>
+                          <td>17/07/2020
+                            <div class="time">10:00 am</div>
+                          </td>
+                        </tr>
+                        <tr> 
+                          <td>Smashed Food</td>
+                          <td>17/07/2020
+                            <div class="time">10:00 am</div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card-overview">
+                  <div class="card-head">
+                    <h4 style="font-size: 15px">P.T.</h4>
+                    <form class="form-inline">
+                      <div class="form-group">
+                        <div class="input-group">
+                          <input class="form-control" type="text" placeholder="Search complaints"/>
+                          <div class="input-group-addon" href=""><i class="fa fa-search"></i></div>
+                        </div>
+                      </div>
+                    </form><span class="icon"><span class="Puls"><i class="fa fa-plus-circle fa-2x">   </i></span><span class="favorite"></span></span>
+                  </div>
+                  <div class="card-bod">
+                    <table class="table"> 
+                      <thead>
+                        <tr>
+                          <th>Service</th>
+                          <th>Sessions</th>
+                          <th>Status</th>
+                          <th>Date</th>
+                        </tr>
+                      </thead>
+                      <tbody> 
+                        <tr> 
+                          <td>Electrophysiology</td>
+                          <td>2/6</td>
+                          <td>Partially</td>
+                          <td>17/07
+                            <div class="time">10:00 am</div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">           
+              <div class="col-lg-4">
+                <div class="card-overview">
+                  <div class="card-head">
+                    <h4 style="font-size: 15px">Bl. Transfusion</h4>
+                    <form class="form-inline">
+                      <div class="form-group">
+                        <div class="input-group">
+                          <input class="form-control" type="text" placeholder="Search complaints"/>
+                          <div class="input-group-addon" href=""><i class="fa fa-search"></i></div>
+                        </div>
+                      </div>
+                    </form><span class="icon"><span class="Puls"><i class="fa fa-plus-circle fa-2x">   </i></span><span class="favorite"></span></span>
+                  </div>
+                  <div class="card-bod">
+                    <table class="table"> 
+                      <thead>
+                        <tr>
+                          <th>Derivative</th>
+                          <th>Status</th>
+                          <th>Date</th>
+                        </tr>
+                      </thead>
+                      <tbody> 
+                        <tr> 
+                          <td>Plasma</td>
+                          <td>Administered</td>
+                          <td>17/07
+                            <div class="time">10:00 am</div>
+                          </td>
+                        </tr>
+                        <tr> 
+                          <td>RBCs</td>
+                          <td> <img src="Images/Group 63.png" alt=""/> Administered</td>
+                          <td>17/07
+                            <div class="time">10:00 am</div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -83,7 +83,7 @@ html(lang="en")
               p No Registered Allergy
           .col-lg-12
             .filter-overview
-              button.btn.btn-default Visits 
+              button.btn.btn-default.show-filter Visits 
                 i.fa.fa-filter 
               table
                 tr
@@ -105,48 +105,842 @@ html(lang="en")
                     p Current Visit.1
                     p 17/07/2020
                   td
-                    .text-center OP
+                    .text-center ER
               .box-card
                 button.btn.btn-default Diabetes 1
                 button.btn.btn-default Aspirin
+          .col-lg-12.filter-info
+            .container-fluid
+              .row
+                .col-lg-2
+                  .form-group
+                    .col-sm-offset-2.col-sm-10
+                      .checkbox
+                        label
+                          input(type='checkbox')
+                          |  Last visit
+                  .form-group
+                    .col-sm-offset-2.col-sm-10
+                      .checkbox
+                        label
+                          input(type='checkbox')
+                          |  Last 2 visits
+                  .form-group
+                    .col-sm-offset-2.col-sm-10
+                      .checkbox
+                        label
+                          input(type='checkbox')
+                          |  Last 3 Visits
+                .col-lg-3
+                  .form-group
+                    .col-sm-offset-2.col-sm-10
+                      .checkbox
+                        label
+                          input(type='checkbox')
+                          |  Visits within Month
+                  .form-group
+                    .col-sm-offset-2.col-sm-10
+                      .checkbox
+                        label
+                          input(type='checkbox')
+                          |  Visits within 3 Months
+                  .form-group
+                    .col-sm-offset-2.col-sm-10
+                      .checkbox
+                        label
+                          input(type='checkbox')
+                          |  Visits from
+                          input(type="text")
+                          | Month
+                .col-lg-4
+                  .form-group
+                    .col-sm-offset-2.col-sm-10
+                      .checkbox
+                        label
+                          input(type='checkbox')
+                          |  Abnormal Values only
+                  .form-group
+                    .col-sm-offset-2.col-sm-10
+                      .checkbox
+                        label
+                          input(type='checkbox')
+                          |  Keywords
+                          textarea.form-control(rows='2')
+
+                .col-lg-3
+                  .form-group.form-group-sm
+                    label.col-sm-3.control-label(for='inputPassword') Visits
+                    .col-sm-9
+                      select.form-control
+                        option All
+                        option 2
+                        option 3
+                        option 4
+                        option 5
+                  .form-group.form-group-sm
+                    label.col-sm-3.control-label(for='inputPassword') Location
+                    .col-sm-9
+                      select.form-control
+                        option Internal Medicine Clinic
+                        option 2
+                        option 3
+                        option 4
+                        option 5
+                  .form-group.form-group-sm
+                    label.col-sm-3.control-label(for='inputPassword') Sorting
+                    .col-sm-9
+                      select.form-control
+                        option Newest to oldest
+                        option 2
+                        option 3
+                        option 4
+                        option 5
+
+
+    .contint-overveiw-box     
+      .container-fluid
+        .row       
           .col-lg-12
             .trending
               button.btn.btn-default Visits
-                i.fa.fa-plus-circle
+                i.fa.fa-plus-circle.fa-2x
               table.table
                 tr
                   td
                     img(src="../Images/statistics.png", alt="")
-                  td Blood Pressure
-                  td Temperature
-                  td Pulse
-                  td O2 Saturation
-                  td Respiratory Rate
-                  td Blood Glucose
-                  td Pain Score
+                  td.dark-green Blood Pressure
+                  td.dark-green Temperature
+                  td.dark-green Pulse
+                  td.dark-green O2 Saturation
+                  td.dark-green Respiratory Rate
+                  td.dark-green Blood Glucose
+                  td.dark-green Pain Score
                 tr
-                  td TodaY
+                  td.dark-green TodaY
                   td 
-                    h4 120/80 mmhg
+                    h4.light-green 120/80 mmhg
                       i.fa.fa-arrow-down
                   td 
-                    h4 38 C
+                    h4.color-red 38 C
                       i.fa.fa-arrow-up
                   td 
-                    h4 60 bpm
+                    h4.light-green 60 bpm
                       i.fa.fa-arrow-down
                   td 
-                    h4 99 %
+                    h4.light-green 99 %
                       i.fa.fa-arrow-up
                   td 
-                    h4 Not Taken
+                    h4.dark-green Not Taken
                   td 
-                    h4 1.2 mmol/l
+                    h4.light-green 1.2 mmol/l
                       i.fa.fa-arrow-down
                   td 
-                    h4 7
+                    h4.color-red 7
                       i.fa.fa-arrow-up
+          .col-lg-12
+            .row
+              .col-lg-4
+                .card-overview
+                  .card-head
+                    h4 Complaints
+                    form.form-inline
+                      .form-group
+                        .input-group
+                          input.form-control(type='text', placeholder='Search complaints')
+                          .input-group-addon(href="")
+                            i.fa.fa-search
+                    span.icon
+                      span.Puls
+                        i.fa.fa-plus-circle.fa-2x    
+                      span.favorite
+                        i.fa.fa-star.fa-2x    
+                  .card-bod
+                    table.table  
+                      thead
+                        tr
+                          th Complaint
+                          th Date
+                          th 
+                      tbody 
+                        tr  
+                          td Abdominal pain
+                          td 17/07/2020
+                          td.color-yellow Chief
+                        tr  
+                          td Vomiting
+                          td 17/07/2020
+                          td 
+                        tr  
+                          td Headache
+                          td 12/05/2020
+                          td.color-yellow Chief
+              .col-lg-4
+                .card-overview
+                  .card-head
+                    h4 Findings
+                    form.form-inline
+                      .form-group
+                        .input-group
+                          input.form-control(type='text', placeholder='Search complaints')
+                          .input-group-addon(href="")
+                            i.fa.fa-search
+                    span.icon
+                      span.Puls
+                        i.fa.fa-plus-circle.fa-2x    
+                      span.favorite
+                        i.fa.fa-star.fa-2x    
+                  .card-bod
+                    table.table  
+                      thead
+                        tr
+                          th Finding
+                          th Date
+                          th Physician
+                      tbody 
+                        tr  
+                          td Palpitation
+                          td 17/07/2020
+                          td Dr.Ahmed Sayed
+                        tr  
+                          td Weak Pluse
+                          td 17/07/2020
+                          td Dr.Ahmed Sayed
+                        tr  
+                          td Murmur
+                          td 12/05/2020
+                          td Dr.Ahmed Sayed
+              .col-lg-4
+                .card-overview
+                  .card-head
+                    h4 Diagnosis
+                    form.form-inline
+                      .form-group
+                        .input-group
+                          input.form-control(type='text', placeholder='Search complaints')
+                          .input-group-addon(href="")
+                            i.fa.fa-search
+                    span.icon
+                      span.Puls
+                        i.fa.fa-plus-circle.fa-2x    
+                      span.favorite
+                        i.fa.fa-star.fa-2x    
+                  .card-bod
+                    table.table  
+                      thead
+                        tr
+                          th Diagnosis
+                          th 
+                          th 
+                          th 
+                      tbody 
+                        tr  
+                          td 
+                            p i10. Essential Hypertension
+                            small Dr. Mohamed Mostafa 
+                          td 17/02/2020
+                          td.color-yellow Final
+                          td 
+                            i.fa.fa-info-circle.fa-lg
+                        tr  
+                          td 
+                            p H59. Heart Failure, unspecified 
+                            small Dr. Mohamed Mostafa 
+                          td 17/02/2020
+                          td.color-yellow Initial
+                          td 
+                            i.fa.fa-info-circle.fa-lg
+            .row  
+              .col-lg-4
+                .card-overview
+                  .card-head
+                    h4 Laboratory
+                    form.form-inline
+                      .form-group
+                        .input-group
+                          input.form-control(type='text', placeholder='Search complaints')
+                          .input-group-addon(href="")
+                            i.fa.fa-search
+                    span.icon
+                      span.Puls
+                        i.fa.fa-plus-circle.fa-2x    
+                      span.favorite
+                        img(src="Images/Group 5.svg", alt="")
+                  .card-bod
+                    table.table  
+                      thead
+                        tr
+                          th Service
+                          th Date
+                          th Status/Result
+                          th 
+                      tbody 
+                        tr  
+                          td INR
+                          td 17/07
+                          td Writing
+                          td 
+                        tr  
+                          td LDL
+                          td 17/07/2020
+                          td 99 mg/dl
+                          td 
+                            i.fa.fa-window-minimize.fa-lg
+                        tr  
+                          td HDL
+                          td 12/05/2020
+                          td 40 mg/dl
+                          td.color-green 
+                            i.fa.fa-arrow-down.fa-lg
+                        tr  
+                          td Cholesterol
+                          td 17/07/2020
+                          td 120 mg/dl
+                          td.color-red 
+                            i.fa.fa-arrow-up.fa-lg
+                        tr  
+                          td Triglyceride
+                          td 12/05/2020
+                          td 130 mg/dl
+                          td.color-green 
+                            i.fa.fa-arrow-down.fa-lg
+              .col-lg-4
+                .card-overview
+                  .card-head
+                    h4 Radiology
+                    form.form-inline
+                      .form-group
+                        .input-group
+                          input.form-control(type='text', placeholder='Search complaints')
+                          .input-group-addon(href="")
+                            i.fa.fa-search
+                    span.icon
+                      span.Puls
+                        i.fa.fa-plus-circle.fa-2x    
+                      span.favorite
+                        img(src="Images/Group 5.svg", alt="")
+                  .card-bod
+                    table.table  
+                      thead
+                        tr
+                          th Service
+                          th Date
+                          th Status
+                          th Report/PACs
+                      tbody 
+                        tr  
+                          td Chest X-Ray
+                          td 17/07/2020
+                          td.color-green  Normal
+                          td 
+                            img(src="../Images/report.svg", alt="")
+                            img(src="../Images/x-ray.svg", alt="" style="margin: 0 10px; display: inline-block")
+                        tr  
+                          td Chest X-Ray
+                          td 17/07/2020
+                          td  Writing
+                          td 
+                            img(src="../Images/report.svg", alt="")
+                            img(src="../Images/x-ray.svg", alt="" style="margin: 0 10px; display: inline-block")
+                        tr  
+                          td Chest X-Ray
+                          td 17/07/2020
+                          td.color-red   Abnormal
+                          td 
+                            img(src="../Images/report.svg", alt="")
+                            img(src="../Images/x-ray.svg", alt="" style="margin: 0 10px; display: inline-block")
+                        tr  
+                          td Chest X-Ray
+                          td 17/07/2020
+                          td.color-green  Normal
+                          td 
+                            img(src="../Images/report.svg", alt="")
+                            img(src="../Images/x-ray.svg", alt="" style="margin: 0 10px; display: inline-block")
+                        
+              .col-lg-4
+                .card-overview
+                  .card-head
+                    h4 Medication
+                    form.form-inline
+                      .form-group
+                        .input-group
+                          input.form-control(type='text', placeholder='Search complaints')
+                          .input-group-addon(href="")
+                            i.fa.fa-search
+                    span.icon
+                      span.Puls
+                        i.fa.fa-plus-circle.fa-2x    
+                      span.favorite
+                        i.fa.fa-star.fa-2x    
+                  .card-bod
+                    table.table  
+                      thead
+                        tr
+                          th Medication
+                          th Dose
+                          th 
+                            i.fa.fa-filter
+                      tbody 
+                        tr  
+                          td Concor 5 mg tab
+                          td 1 tab/Once daily
+                          td.color-green 
+                            i.fa.fa-circle
+                        tr  
+                          td Plavix 75 mg tab
+                          td 1 tab/Once Daily
+                          td.color-green 
+                            i.fa.fa-circle
+                        tr  
+                          td Aspirin 81 mg tab
+                          td 1 tab/After Lunch
+                          td.color-green 
+                            i.fa.fa-circle
+                        tr  
+                          td Augmentin 1g tab
+                          td 1 tab/Every 12 hrs/7 days
+                          td.color-red 
+                            i.fa.fa-circle
+            .row            
+              .col-lg-4
+                .card-overview
+                  .card-head
+                    h4 Operations
+                    form.form-inline
+                      .form-group
+                        .input-group
+                          input.form-control(type='text', placeholder='Search complaints')
+                          .input-group-addon(href="")
+                            i.fa.fa-search
+                    span.icon
+                      span.Puls
+                        i.fa.fa-plus-circle.fa-2x    
+                      span.favorite
+                  .card-bod
+                    table.table  
+                      thead
+                        tr
+                          th Operation
+                          th Date
+                          th Status/Report
+                      tbody 
+                        tr  
+                          td ACL
+                          td 17/07/2020
+                          td Scheduled
+                        tr  
+                          td Open Heart
+                          td 17/07/2020
+                          td 
+                            img(src="../Images/x-ray.svg", alt="" )
+                        
+              .col-lg-4
+                .card-overview
+                  .card-head
+                    h4 Catheter
+                    form.form-inline
+                      .form-group
+                        .input-group
+                          input.form-control(type='text', placeholder='Search complaints')
+                          .input-group-addon(href="")
+                            i.fa.fa-search
+                    span.icon
+                      span.Puls
+                        i.fa.fa-plus-circle.fa-2x    
+                      span.favorite
+                  .card-bod
+                    table.table  
+                      thead
+                        tr
+                          th Operation
+                          th Date
+                          th Status/Report/PACs
+                          th 
+                      tbody 
+                        tr  
+                          td ACL
+                          td 17/07/2020
+                          td Scheduled
+                          td 
+                        tr  
+                          td Open Heart
+                          td 17/07/2020
+                          td  
+                            img(src="../Images/report.svg", alt="")
+                          td 
+                            img(src="../Images/x-ray.svg", alt="" )
+                        
+              .col-lg-4
+                .card-overview
+                  .card-head
+                    h4 Endoscopy
+                    form.form-inline
+                      .form-group
+                        .input-group
+                          input.form-control(type='text', placeholder='Search complaints')
+                          .input-group-addon(href="")
+                            i.fa.fa-search
+                    span.icon
+                      span.Puls
+                        i.fa.fa-plus-circle.fa-2x    
+                      span.favorite
+                  .card-bod
+                    table.table  
+                      thead
+                        tr
+                          th Operation
+                          th Date
+                          th Status/Report/PACs
+                          th 
+                      tbody 
+                        tr  
+                          td ACL
+                          td 17/07/2020
+                          td Scheduled
+                          td 
+                        tr  
+                          td Open Heart
+                          td 17/07/2020
+                          td  
+                            img(src="../Images/report.svg", alt="")
+                          td 
+                            img(src="../Images/x-ray.svg", alt="" )
+                        
+            .row            
+              .col-lg-4
+                .card-overview
+                  .card-head
+                    h4 Services
+                    form.form-inline
+                      .form-group
+                        .input-group
+                          input.form-control(type='text', placeholder='Search complaints')
+                          .input-group-addon(href="")
+                            i.fa.fa-search
+                    span.icon
+                      span.Puls
+                        i.fa.fa-plus-circle.fa-2x    
+                      span.favorite
+                  .card-bod
+                    table.table  
+                      thead
+                        tr
+                          th Service
+                          th Status
+                          th Date
+                      tbody 
+                        tr  
+                          td Suppository
+                          td Checked-Out
+                          td 17/07/2020
+                            .time 10:00 am
+                        tr  
+                          td UltraSound
+                          td Checked-Out
+                          td 17/07/2020
+                            .time 10:00 am
+                        
+                        
+              .col-lg-4
+                .card-overview
+                  .card-head
+                    h4 Sheets
+                    form.form-inline
+                      .form-group
+                        .input-group
+                          input.form-control(type='text', placeholder='Search complaints')
+                          .input-group-addon(href="")
+                            i.fa.fa-search
+                    span.icon
+                      span.Puls
+                        i.fa.fa-plus-circle.fa-2x    
+                      span.favorite
+                  .card-bod
+                    table.table  
+                      thead
+                        tr
+                          th Name
+                          th Sheet
+                          th Date
+                      tbody 
+                        tr  
+                          td Glass Prescription
+                          td 
+                            img(src="../Images/report.png", alt="")
+                          td 17/07/2020
+                            .time 10:00 am
+                        tr  
+                          td Ophthalmology Sheet
+                          td 
+                            img(src="../Images/report.png", alt="")
+                          td 17/07/2020
+                            .time 10:00 am
+              .col-lg-4
+                .card-overview
+                  .card-head
+                    h4(style="font-size: 15px") Medical Report
+                    form.form-inline
+                      .form-group
+                        .input-group
+                          input.form-control(type='text', placeholder='Search complaints')
+                          .input-group-addon(href="")
+                            i.fa.fa-search
+                    span.icon
+                      span.Puls
+                        i.fa.fa-plus-circle.fa-2x    
+                      span.favorite
+                  .card-bod
+                    table.table  
+                      thead
+                        tr
+                          th Medical Report
+                          th Date
+                      tbody 
+                        tr  
+                          td Discharge Summary
+                            img(src="../Images/report.png", alt="" style="margin: 0 10px; display: inline-block")
+                          td 17/07/2020
+                            .time 10:00 am
+                        
+            .row            
+              .col-lg-4
+                .card-overview
+                  .card-head
+                    h4(style="font-size: 15px") Progress Notes
+                    form.form-inline
+                      .form-group
+                        .input-group
+                          input.form-control(type='text', placeholder='Search complaints')
+                          .input-group-addon(href="")
+                            i.fa.fa-search
+                    span.icon
+                      span.Puls
+                        i.fa.fa-plus-circle.fa-2x    
+                      span.favorite
+                  .card-bod
+                    table.table  
+                      thead
+                        tr
+                          th Notes
+                          th Date
+                      tbody 
+                        tr  
+                          td Patient is now better
+                          td 17/07/2020
+                            .time 10:00 am
+                        tr  
+                          td To Check Lab results
+                          td 17/07/2020
+                            .time 10:00 am
+                        
+                        
+              .col-lg-4
+                .card-overview
+                  .card-head
+                    h4 Remakrs
+                    form.form-inline
+                      .form-group
+                        .input-group
+                          input.form-control(type='text', placeholder='Search complaints')
+                          .input-group-addon(href="")
+                            i.fa.fa-search
+                    span.icon
+                      span.Puls(style="position: relative;left: -5px;")
+                        img(src="Images/Group 61.png", alt="")   
+                      span.Puls
+                        i.fa.fa-plus-circle.fa-2x    
+                      span.favorite
+                  .card-bod
+                    table.table  
+                      thead
+                        tr
+                          th Remarks
+                          th Date
+                      tbody 
+                        tr  
+                          td Dr. Ahmed : To check vital signs every 12 hours
+                          td 17/07/2020
+                            .time 10:00 am
+                        tr  
+                          td Nr. Soha: Ok Doctor
+                          td 17/07/2020
+                            .time 10:00 am
+              .col-lg-4
+                .card-overview
+                  .card-head
+                    h4(style="font-size: 15px") Consultation
+                    form.form-inline
+                      .form-group
+                        .input-group
+                          input.form-control(type='text', placeholder='Search complaints')
+                          .input-group-addon(href="")
+                            i.fa.fa-search
+                    span.icon
+                      span.Puls
+                        i.fa.fa-plus-circle.fa-2x    
+                      span.favorite
+                  .card-bod
+                    table.table  
+                      thead
+                        tr
+                          th From
+                          th To
+                          th Details
+                      tbody 
+                        tr  
+                          td Dr. Ahmed Sayed
+                            .info.color-green Internal Medicine
+                            .time 17/07 10:00 am
+                          
+                          td Dr. Mohamed Ahmed
+                            .info.color-green Anesthesia
+                            .time Not yet
+                          
+                          td 
+                            img(src="../Images/checklist.png ", alt="")
+                          
+            .row            
+              .col-lg-4
+                .card-overview
+                  .card-head
+                    h4(style="font-size: 15px") Scoring
+                    form.form-inline
+                      .form-group
+                        .input-group
+                          input.form-control(type='text', placeholder='Search complaints')
+                          .input-group-addon(href="")
+                            i.fa.fa-search
+                    span.icon
+                      span.Puls
+                        i.fa.fa-plus-circle.fa-2x    
+                      span.favorite
+                  .card-bod
+                    table.table  
+                      thead
+                        tr
+                          th Score
+                          th Result
+                          th Conclusion
+                          th Date
+                      tbody 
+                        tr  
+                          td Morse Fall Risk
+                          td.color-red 60
+                            i.fa.fa-arrow-up
+                          td 
+                            i.fa.fa-info-circle.fa-lg
+                          td 17/07/2020
+                             .time 10:00 am
+                        tr  
+                          td EWBS
+                          td.color-green 3
+                            i.fa.fa-arrow-down
+                          td 
+                            i.fa.fa-info-circle.fa-lg
+                          td 17/07/2020
+                             .time 10:00 am
+                        
+                        
+                        
+              .col-lg-4
+                .card-overview
+                  .card-head
+                    h4 Dietary
+                    form.form-inline
+                      .form-group
+                        .input-group
+                          input.form-control(type='text', placeholder='Search complaints')
+                          .input-group-addon(href="")
+                            i.fa.fa-search
+                    span.icon
+                      span.Puls
+                        i.fa.fa-plus-circle.fa-2x    
+                      span.favorite
+                  .card-bod
+                    table.table  
+                      thead
+                        tr
+                          th Diet
+                          th Date
+                      tbody 
+                        tr  
+                          td Low Salt Meals
+                          td 17/07/2020
+                            .time 10:00 am
+                        tr  
+                          td Smashed Food
+                          td 17/07/2020
+                            .time 10:00 am
+              .col-lg-4
+                .card-overview
+                  .card-head
+                    h4(style="font-size: 15px") P.T.
+                    form.form-inline
+                      .form-group
+                        .input-group
+                          input.form-control(type='text', placeholder='Search complaints')
+                          .input-group-addon(href="")
+                            i.fa.fa-search
+                    span.icon
+                      span.Puls
+                        i.fa.fa-plus-circle.fa-2x    
+                      span.favorite
+                  .card-bod
+                    table.table  
+                      thead
+                        tr
+                          th Service
+                          th Sessions
+                          th Status
+                          th Date
+                      tbody 
+                        tr  
+                          td Electrophysiology
+                          td 2/6
+                          td Partially
+                          td 17/07
+                            .time 10:00 am
+            .row            
+              .col-lg-4
+                .card-overview
+                  .card-head
+                    h4(style="font-size: 15px") Bl. Transfusion
+                    form.form-inline
+                      .form-group
+                        .input-group
+                          input.form-control(type='text', placeholder='Search complaints')
+                          .input-group-addon(href="")
+                            i.fa.fa-search
+                    span.icon
+                      span.Puls
+                        i.fa.fa-plus-circle.fa-2x    
+                      span.favorite
+                  .card-bod
+                    table.table  
+                      thead
+                        tr
+                          th Derivative
+                          th Status
+                          th Date
+                      tbody 
+                        tr  
+                          td Plasma
+                          td Administered
+                          td 17/07
+                            .time 10:00 am
+                        tr  
+                          td RBCs
+                          td 
+                            img(src="Images/Group 63.png", alt="")
+                            |  Administered
+                          td 17/07
+                            .time 10:00 am
+                        
+                                      
+                        
+                        
                   
+              
+                        
     script(src="js/jquery-3.4.1.min.js")
     script(src="js/bootstrap.min.js")
     script(src="js/main.js")

@@ -109,30 +109,129 @@ aside.aside-overveiw {
   .box-card {
     background-color: #fff;
     box-shadow: 0 0 5px rgba(0,0,0,0.2);
-    width: 59%;
+    width: 58%;
     padding: 5px;
     border-radius: 5px;
   }
 }
-.trending {
-  display: flex;
-  padding: 10px 0;
-  background-color: #fff;
-  button.btn.btn-default {
-    border-radius: 50%;
-    i {
-      display: block;
+.filter-info {
+  display: none;
+  .row {
+    position: relative;
+    background-color: #fff;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    padding-bottom: 10px;
+  }
+  .form-group {
+
+      .checkbox {
+        margin-bottom: 0;
+        input[type='text'] {
+          width: 30px;
+          display: inline-block;
+          margin: 0 5px;
+        }
+      }
+    
+    
+  }
+  .form-group-sm {
+    margin: 7px 0;
+    display: flex;
+
+  }
+  
+}
+/* End Continer Over Veiw */
+
+/* Start contint-overveiw-box   */
+.contint-overveiw-box   {
+  padding-left: 150px;
+  .trending {
+    display: flex;
+    padding: 10px 0;
+    background-color: #fff;
+    button.btn.btn-default {
+      border-radius: 50%;
+      background-color: #0fa980;
+      color: #fff;
+      height: 65px;
+      margin: 0 10px;
+      i {
+        display: block;
+        
+      }
+    }
+    table {
+      margin-bottom: 0;
+      tr {
+        td {
+          text-align: center;
+          h4 {
+            margin: 0;
+          }
+        }
+      }
+      .dark-green {
+        color: #0A6876;
+      }
+      .light-green {
+        color: #15CC40;
+      }
     }
   }
-  table {
-    tr {
-      td {
-        text-align: center;
-        h4 {
-          margin: 0;
+  .card-overview {
+    margin: 10px 0;
+    .card-head {
+      display: flex;
+      justify-content: space-between;
+      background-color: #0FA980;
+      border-radius: 10px 10px 0 0;
+      h4 {
+        background-color: #0A6876 ;
+        color: #fff;
+        padding: 12px ;
+        margin: 0;
+        border-radius: 10px 0 0 0;
+      }
+      form.form-inline {
+        width: 50%;
+        padding: 5px 0;
+      }
+      span.icon {
+        display: flex;
+        width: 15%;
+        justify-content: space-between;
+        padding: 10px 0;
+        span.Puls {
+          color: #fff;
+        }
+        span.favorite {
+          margin: 0 5px;
+          color: #FFC107;
+        }
+      }
+    }
+    .card-bod {
+      background-color: #fff;
+      table.table {
+        th {
+          color: #0FA980;
+        }
+        td {
+          color: #0A6876;
+          p {
+            margin-bottom: 0;
+          }
+          small {
+            padding-left: 10px;
+            display: inline-block;
+          }
         }
       }
     }
   }
 }
-/* End Continer Over Veiw */
+/* End contint-overveiw-box   */
